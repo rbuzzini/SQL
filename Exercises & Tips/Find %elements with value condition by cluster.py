@@ -76,5 +76,6 @@ pd.read_sql_query(
   GROUP BY e.DeptID
   HAVING NumberOfEmployees >= 2
   ORDER BY pctAbove1500 DESC
+  LIMIT 1
   """,
   connection)
